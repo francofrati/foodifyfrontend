@@ -91,39 +91,14 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
-	transform: translate3D(-50%, -50%, 0);
-    cursor: pointer;
-  color: #fff;
-  border: 2px solid #fff;
-  background: #222;
-	&:before,
-	&:after {
-		width: 0%;
-		height: 2px;
-		position: absolute;
-		background: #e5c100;
-		transition: width .4s ease-in-out;
-		content: " ";
-	}
-
-	&:before {
-		top: -2px;
-	}
-
-	&:after {
-		bottom: -2px;
-	}
-
+    color: #fff;
+    border: 2px solid #fff;
+    background: #222;
 	&:hover {
 		padding: 5px 25px 5px 35px;
 		border-color: #e5c100;
-    color: lighten(#e5c100, 50%);
-
-		&:before,
-		&:after {
-			width: 100%;
-		}
-	}
+        color: lighten(#e5c100, 50%);
+    }
 }
 
 
