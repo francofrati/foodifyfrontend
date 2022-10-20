@@ -7,7 +7,7 @@ import { fetchOneRestaurant } from '../../Redux/thunks/restaurantsThunks'
 import { cleanRestaurantState } from '../../Redux/slices/restaurantsSlice'
 import Swal from 'sweetalert2'
 
-import s from './RestaurantPage.module.css'
+import s from './RestaurantPage.module.scss'
 import { fetchAllFoods, fetchFoodsRestaurant } from '../../Redux/thunks/foodsThunks'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import FoodList from '../../components/FoodList/FoodList'
@@ -109,7 +109,13 @@ const RestaurantPage = () => {
 
                 </div>
             </>}
-            <button onClick={() => handleNavigate(id)}>Proceed to checkout</button>
+            {/* <button onClick={() => handleNavigate(id)} className={s.buttonCheckout}>Proceed to checkout</button> */}
+
+            <div className={`${s.btn_bg} ${s.bg_5}`}>
+                <div className={`${s.btn} ${s.btn_5}`}>
+                    <button onClick={() => handleNavigate(id)}>Proceed to checkout</button>
+                </div>
+            </div>
 
 
             {user ? <Review /> : <></>}
