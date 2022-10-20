@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { jarallax, jarallaxElement } from 'jarallax'
 import Footer from '../Footer/Footer.jsx'
 import restaurant from '../../assets/restaurant.jpg'
-// import restaurant2 from '../../assets/restaurant2.jpeg'
+import restaurant2 from '../../assets/restaurant2.jpeg'
 import restaurant3 from '../../assets/restaurant3.jpeg'
 import restaurant4 from '../../assets/restaurant4.jpeg'
 import McDonaldsPromo from '../../assets/McDonaldsPromo.jpg'
@@ -99,7 +99,7 @@ const LandingPage = () => {
                     <h2 data-jarallax-element="0 -200">Landing page</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
-                            <img src={restauran2t} alt='demo_img' className="jarallax-img" />
+                            <img src={restauran2} alt='demo_img' className="jarallax-img" />
                         </div>
                         <div className='content1' data-jarallax-element="-200 0">
                             <p>The Vista by Chef Denis, the in house contemporary fine-dining restaurant at Mount Alverno Luxury Resorts Caledon, specializes in traditional Canadian cuisine with a delicious French twist.</p>
