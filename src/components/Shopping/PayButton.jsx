@@ -25,24 +25,7 @@ const PayButton = ({ cartItems, userInfo, cartInfo, idRestaurant }) => {
 
     console.log(userrr)
     const handleCheckout = () => {
-      let info = jwt_decode(window.localStorage.getItem('token'));
-      let id = info.id
-      console.log('info', info)
-      
-      const seller = JSON.parse(window.localStorage.cartItems)
-      console.log('seññer',seller)
-    
-      const cart = JSON.parse(window.localStorage.getItem('cartItems'))
-    
-    
-      const body = {
-        restaurant_id_mongo: seller,
-        user_id_mongo: id,
-        user_name: info.name,
-        user_email: info.email,
-        products: JSON.parse(window.localStorage.getItem('cartItems')),
-      }
-      axios.post('https://foodifyback.herokuapp.com/orders/post', body)
+        
           console.log(userInfo);
           if (token) {
             axios
