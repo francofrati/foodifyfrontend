@@ -92,6 +92,7 @@
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
 	transform: translate3D(-50%, -50%, 0);
+    cursor: pointer;
   color: #fff;
   border: 2px solid #fff;
   background: #222;
@@ -106,13 +107,11 @@
 	}
 
 	&:before {
-		left: 0;
 		top: -2px;
 	}
 
 	&:after {
 		bottom: -2px;
-		right: 0;
 	}
 
 	&:hover {
