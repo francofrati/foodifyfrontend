@@ -29,6 +29,7 @@ const CheckoutSuccess = () => {
   function next() {
     let info = jwt_decode(window.localStorage.token);
     let id = info.id
+
     cart.cartItems.map(food => {
       console.log('//////////////////////////////')
       axios({
@@ -39,6 +40,10 @@ const CheckoutSuccess = () => {
     // dispatch(clearCart());
     navigate(`/`);
   }
+
+  let info = jwt_decode(window.localStorage.getItem('token'));
+    let id = info.id
+    console.log('info',info)
 
   useEffect(() => {
 
@@ -53,9 +58,9 @@ const CheckoutSuccess = () => {
     
     const body = {
       restaurant_id_mongo: seller,
-      user_id_mongo: userNow.id,
-      user_name: userNow.name,
-      user_email: userNow.email,
+      user_id_mongo: id,
+      user_name: info.name,
+      user_email: info.email,
       products: JSON.parse(window.localStorage.getItem('cartItems')),
     }
 
