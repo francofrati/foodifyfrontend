@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.btn_more{
+    background-color: #20B5E5;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 10px;
+    height: 30px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_more:focus{
+    outline: none;
+}

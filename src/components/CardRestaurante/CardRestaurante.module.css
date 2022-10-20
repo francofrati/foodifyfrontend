@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+
+.cont {
+    background: rgba(4, 4, 4, 0.63);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+    width: 100%;
+    display: flex;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.logo_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.title_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-left: 80px;
+}
+
+.plus_logo {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+
+.description_cont {
+    width: 100%;
+}
+.options_foodimg_cont{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+.options{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight:200;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rest_foods_img_cont{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 40px;
+}
+.rest_foods_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}

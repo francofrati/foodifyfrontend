@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn_submit {
+    width: 80%;
+    border: none;
+    height: 40px;
+    background-color: #20B5E5;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.progress_cont {
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top:50px
+}
+
+.progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background-color: #20B5E5;
+    border: 5px solid grey;
+    transition: .3s all;
+}
+.progress1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background-color: grey;
+    border: 5px solid grey;
+    transition: .3s all;
+
+}
+.btn_submit:focus {
+    outline: none;
+}
+
+.form_one_cont {
+    /* margin: auto; */
+    width: 800px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Nunito', sans-serif;
+    padding: 30px;
+    /* From https://css.glass */
+    background: rgba(104, 104, 104, 0.54);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(19.5px);
+    -webkit-backdrop-filter: blur(19.5px);
+}
+
+.location_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.first_cont {
+    display: flex;
+    align-items: center;
+
+}
+
+.info_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}

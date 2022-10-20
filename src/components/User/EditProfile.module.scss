@@ -1,0 +1,48 @@
+.mainContainer{
+    //position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+   
+   
+ 
+    //max-width: 1200px;
+    
+    
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #B881FF;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    input{
+        border-radius: 5px;
+        border: 2px solid #e2e2e2;
+        width: 100%;
+
+        position: relative;
+        top: 0.5em;
+    }
+    label{
+        position: relative;
+        top: 0.5em;
+    }
+
+    .error{
+        position: relative;
+        top: 1em;
+        color: #e92b2d;
+		font-weight: 600px;
+		font-size: 12px;
+    }
+}

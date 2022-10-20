@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.cont {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(127, 119, 134);
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(204, 204, 204);
+
+}
+
+.foodify_logo {
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.options_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    /* height: 100%; */
+}
+
+.panel_cont {
+    width: 400px;
+    height: 100%;
+}
+
+.foody_cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+
+
+}
+
+.content_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.options_info_cont {
+    border-left: 1px solid black;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.shop_name_cont {
+    background-color: rgb(187, 197, 199);
+    color: #187797;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 140px;
+
+    width: 100%;
+
+    
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Opciones */
+
+.option_cont {
+    width: 96%;
+    /* height: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 61, 95);
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+    font-family: monospace;
+}
+
+.active_option {
+    background-color: #20B5E5;
+    width: 99%
+}

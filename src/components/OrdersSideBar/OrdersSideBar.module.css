@@ -1,0 +1,77 @@
+.orders_cont {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    /* background: rgba(0, 0, 0, 0.47); */
+    /* border-top-right-radius: 16px; */
+    /* border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); */
+    transition: .5s ease-in-out;
+}
+
+.order_cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* border: 1px solid grey; */
+    background-color: rgb(214, 209, 209);
+    border-radius: 999px;
+    padding: 3px;
+    color: black;
+
+}
+
+.dots_cont {
+    position: relative;
+    display: flex;
+    gap: 3px;
+    margin-right: 20px;
+}
+
+.status_dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background-color: green;
+    animation: pendingAnimation 2s infinite;
+    /* position: absolute; */
+    /* transition: ease-in-out .3s; */
+}
+
+.status_dot2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background-color: green;
+    animation: pendingAnimation 2s infinite;
+    animation-delay: .2s;
+    /* position: absolute; */
+    /* transition: ease-in-out .3s; */
+}
+.status_dot3 {
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background-color: green;
+    animation: pendingAnimation 2s infinite;
+    animation-delay: .4s;
+    /* position: absolute; */
+    /* transition: ease-in-out .3s; */
+}
+@keyframes pendingAnimation {
+    0% {transform: translateY(5px);}
+
+    50%{transform: translateY(-5px);}
+
+    100%{transform: translateY(5px);}
+    
+
+}

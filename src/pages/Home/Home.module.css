@@ -1,0 +1,13 @@
+.container {
+    width: 98%;
+    margin :auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.filter_rest_cont{
+    display: flex;
+    gap: 20px;
+   
+}

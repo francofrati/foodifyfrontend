@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.cont{
+    background: rgba(4, 4, 4, 0.63);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+    width: 99%;
+    height: 2.8rem;
+    border-radius: 9999px;
+    margin: 20px auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    overflow-y: hidden;
+}
+.menu_logo_cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 13px;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.logo{
+    padding-top:.4rem ;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+.ubication_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.avatar{
+    height: 2.1rem;
+    width: 2.1rem;
+    margin-top:.4rem ;
+    border-radius: 9999px;
+    margin-right: 10px;
+    
+}
+.btn_session{
+    height: 2rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-color: transparent;
+    border: none;
+    margin: auto 0;
+    margin-right:10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_session:hover{
+    color:#20B5E5;
+}

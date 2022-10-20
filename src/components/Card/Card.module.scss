@@ -1,0 +1,172 @@
+// .container{
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
+// }
+
+// .content {
+//     max-width: 100px;
+//     margin-top: 20px;
+// }
+
+
+
+
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+.container .box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    
+}
+
+.container .box::before {
+    content: 'Foodify';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #6c5286;
+    font-style: italic;
+    opacity: 0;
+}
+
+.container .box::after {
+    content: 'Foodify';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #6c5286;
+    font-style: italic;
+    opacity: 0;
+}
+
+.container .box:hover::before,
+.container .box:hover::after 
+    {
+    opacity: 0.34;
+}
+
+
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+
+}
+
+.container .box:hover .name {
+    top: 10px;
+    opacity: 1;
+}
+
+.container .box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    transform: translate3d(-50%, -50%, 50px);
+    opacity: 1;
+}
+
+.container .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 200px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 0px);
+    border-radius: 20px;
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy {
+    background: #379bf7;
+    cursor: pointer;
+}
+
+
+.price {
+    margin-top: 0px;
+}
+
+.info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }

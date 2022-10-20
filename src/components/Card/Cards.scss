@@ -1,0 +1,515 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato:300,900');
+
+// $transition-ease-in-out: all .25s ease-in-out 0s;
+// $transition-cubic-bezier : all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// $animation-offset: 80px;
+
+
+// strong {
+// 	font-weight: 900;
+// }
+// .canvas-wrapper {
+// 	animation: fade-in 3s ease-in-out forwards;
+
+// 	margin-top: 60px;
+
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	height: 100%;
+
+
+// 	position: relative;
+//     width:400px;
+//     height:500px;
+//     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+//     border-radius:15px;
+// 	margin: 0px auto;
+// 	margin-top: 70px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-top:1px solid rgba(255,255,255,0.5);
+//     border-left:1px solid rgba(255,255,255,0.5);
+//     backdrop-filter: blur(5px);
+//     transform-style: preserve-3d;
+//     transform: perspective(800px);
+	
+// 	.canvas + .canvas {
+// 		margin-left: 40px;
+// 	}
+// }
+// .canvas {
+// 	position: relative;
+// 	display: block;
+// 	width: 400px;
+// 	height: 400px;
+// 	padding: 20px;
+// 	color: inherit;
+// 	text-decoration: none;
+// }
+// .canvas_border {
+// 	position: absolute;
+// 	top: 40px;
+// 	left: -40px;
+// 	height: 100%;
+// 	width: 100%;
+// 	z-index: 0;
+
+// 	svg {
+// 		height: 100%;
+// 		width: 100%;
+// 	}
+// }
+// .rect-gradient {
+// 	stroke-dasharray: 2000;
+// 	stroke-dashoffset: 2000;
+// 	animation: erase-line 1s ease-in-out forwards;
+// }
+// .canvas_img-wrapper {
+// 	position: absolute;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 100%;
+// 	height: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	transform: rotate(-10deg) skew(-10deg);
+// 	overflow: hidden;
+// 	background: transparent;
+// }
+// .canvas_img {
+// 	transform: scale3d(.9,.9,.9);
+// 	opacity: .7;
+// 	max-width: 300px;
+// 	max-height: 300px;
+// }
+// .canvas_copy {
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 85%;
+// 	text-transform: uppercase;
+// 	color: #dac527;
+// 	z-index: 100;
+// }
+// .canvas_copy--left {
+// 	left: -25%;
+// }
+// .canvas_copy_title {
+// 	font-size: 22px;
+// 	display: block;
+// 	transform: translateX(-#{$animation-offset});
+// 		transition: $transition-cubic-bezier 0s;
+// 		color: black;
+
+// 		&:nth-child(1) {
+// 			transition-delay: 0.1s;
+// 			}
+// 		&:nth-child(2) {
+// 			transition-delay: 0.2s;
+// 			}
+// }
+// .canvas_copy_subtitle {
+// 	display: block;
+// 	transform: rotate(270deg) translateY(-100%) translateX(calc(-100% - #{$animation-offset}));
+// 	transform-origin: top left;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 8px; //This needs to change with font size. It's an offset for the line-height of the "hellow world"
+// 	font-size: 24px;
+// 	font-weight: 900;
+// 	transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.35s;
+// }
+// .canvas_copy_details {
+// 	display: block;
+// 	transition: $transition-cubic-bezier 0.14s;
+// 	transform: translateX(-#{$animation-offset});
+// 		}
+// .canvas_border, .canvas_img-wrapper, .canvas_img  {
+// 	transition: $transition-ease-in-out;	
+// }
+// .canvas_border, .canvas_img-wrapper {
+// 	transform: rotate(-10deg) skew(-10deg);	
+// }
+// .canvas_copy_title, .canvas_copy_subtitle, .canvas_copy_details {
+// 	opacity: 0;
+// }
+// .canvas:hover {
+// 	.canvas_copy_title, .canvas_copy_subtitle, .canvas_copy_details, .canvas_img {
+// 		opacity: 1;
+// 	}
+// 	.canvas_border, .canvas_img-wrapper {
+// 		transform: rotate(-14deg) skew(-14deg) scale(0.96);
+// 	}
+// 	.canvas_img {
+// 		transform: scale3d(1,1,1);
+// 	}
+// 	.canvas_copy_title, .canvas_copy_details {
+// 		transform: translateX(0);
+// 	}
+// 	.canvas_copy_subtitle {
+// 		transform: rotate(270deg) translateY(-100%) translateX(-100%);
+// 	}
+// 	.rect-gradient {
+// 		animation: draw-line 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+// 	}
+// }
+
+// @keyframes draw-line {
+// 	from {
+// 		stroke-dashoffset: 2000;		
+// 	}
+// 	to {
+// 		stroke-dashoffset: 0;
+// 	}
+// }
+// @keyframes erase-line {
+// 	from {
+// 		stroke-dashoffset: 0;
+// 	}
+// 	to {
+// 		stroke-dashoffset: 2000;		
+// 	}
+// }
+// @keyframes fade-in {
+// 	from {
+// 		opacity: 0;
+// 	}
+// 	to {
+// 		opacity: 1;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+$hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+$returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+body {
+  margin: 40px 0;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #bcaaa4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  color: #5d4037;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1 + p,
+p + p {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-wrap {
+  margin: 10px;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  // background-color: #fff;
+
+  &:hover {
+    .card-info {
+      transform: translateY(0);
+    }
+    .card-info p {
+      opacity: 1;
+    }
+    .card-info,
+    .card-info p {
+      transition: 0.6s $hoverEasing;
+    }
+    .card-info:after {
+      transition: 5s $hoverEasing;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card-bg {
+      transition: 0.6s $hoverEasing, opacity 5s $hoverEasing;
+      opacity: 0.8;
+    }
+    .card {
+      transition: 0.6s $hoverEasing, box-shadow 2s $hoverEasing;
+      box-shadow: rgba(white, 0.2) 0 0 40px 5px, rgba(white, 1) 0 0 0 1px,
+        rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+        inset white 0 0 0 6px;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  flex: 0 0 240px;
+  width: 240px;
+  height: 320px;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+    inset rgba(white, 0.5) 0 0 0 6px;
+  transition: 1s $returnEasing;
+}
+
+.card-bg {
+  opacity: 0.5;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s $returnEasing, opacity 5s 1s $returnEasing;
+  pointer-events: none;
+}
+
+.card-info {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  p {
+    opacity: 0;
+    text-shadow: rgba(black, 1) 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(#000, 0.6) 100%
+    );
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 5s 1s $returnEasing;
+  }
+}
+
+.card-info h1 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: rgba(black, 0.5) 0 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$card-bg-color: #C8A455;
+
+$hover-easing: cubic-bezier(0.23, 1, 0.32, 1);
+$return-easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+
+* {
+  color: #FFF;
+}
+
+h1 {
+  font-family: "Verdana";
+  text-align: center;
+}
+
+body{
+  background-color: #d2d2d2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-wrapper {
+  margin: 10px;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  
+  
+
+  &:hover {
+    .card-detail {
+      transform: translateY(0);
+      transition: 0.6s $hover-easing;
+      p {
+        opacity: 1;
+        transition: 0.6s $hover-easing;
+      }
+      &:after {
+        transition: 5s $hover-easing;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .parallax-bg {
+      transition: 0.6s $hover-easing, opacity 5s $hover-easing;
+      opacity: 1;
+    }
+
+    .card-content {
+      transition:
+        0.6s $hover-easing,
+        box-shadow 2s $hover-easing;
+      box-shadow:
+        rgba(white, 0.2) 0 0 40px 5px,
+        rgba(white, 1) 0 0 0 1px,
+        rgba(black, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset white 0 0 0 6px;
+    }
+  }
+}
+
+.card {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 330px;
+  
+
+  .card-content{
+  position: relative;
+  transition: 1s $return-easing;
+    width: 96%;
+    height: 100%;
+    margin: 5px;
+    
+  border-radius: 10px;
+  background-color: $card-bg-color;
+    
+
+    overflow: hidden;
+  }
+}
+
+
+.parallax-bg{
+  opacity: 0.5;
+  position: absolute;
+  top: -20px; left: -20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s $return-easing, opacity 5s 1s $return-easing;
+  pointer-events: none;
+  
+}
+
+.character-bg {
+  filter: drop-shadow(5px 5px 5px #222);
+  top: 20px;
+}
+.pattern-bg{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+   background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOUlEQVQoU2NkQAX/GRgYGJGFkDkwSRRFMAXoOuF8kAIMY6FWgMWJMgHmJrxuQFcE9wiKl9C8DOYCAAHlDAmctQ8rAAAAAElFTkSuQmCC
+   ) repeat;
+  opacity: 0.5;
+}
+
+.card-detail {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateY(50%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  
+  p {
+    opacity: 0;
+    text-shadow: rgba(black, 1) 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+
+
+
+
+.frame{
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% - 26px);
+  width: 100%;
+  top: 0px;
+  
+  img {
+    position: absolute;
+  }
+  
+  
+  &.rare {
+    .base-color {
+      
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+      
+    }
+}
+}

@@ -1,0 +1,50 @@
+.foods{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.pagination {
+  ul {
+    display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+    list-style: none;
+
+    margin-top: 10px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+        font-weight: bold;
+        border: 2px solid #c7c7c7;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        color: #797979;
+        border: none;
+        font-weight: bold;
+        // border: 1px solid #797979;
+        // border-radius: 8px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.order_cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+   
+    /* margin-right: 10px; */
+    /* border: 1px solid grey; */
+    background-color: rgb(214, 209, 209);
+    border-radius: 999px;
+    padding: 3px;
+    color: black;
+    gap: 40px;
+
+}
