@@ -39,6 +39,23 @@ const CheckoutSuccess = () => {
     navigate(`/`);
   }
 
+  useEffect(() => {
+    const seller = JSON.parse(window.localStorage.getItem('cartItems'))[0].seller
+
+    const cart = JSON.parse(window.localStorage.getItem('cartItems'))
+
+    
+    const body = {
+      restaurant_id_mongo: seller,
+      user_id_mongo: userNow.id,
+      user_name: userNow.name,
+      user_email: userNow.email,
+      products: JSON.parse(window.localStorage.getItem('cartItems')),
+    }
+
+    axios.post('https://foodifyback.herokuapp.com/order/post',body)
+  }, [])
+
   return (
     <Container>
       <h2>Checkout Successful</h2>
