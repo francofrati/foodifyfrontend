@@ -7,6 +7,7 @@ import { clearCart, getTotals } from "../../Redux/slices/shoppingSlice";
 // import Footer from "../Footer/footer";
 import s from './Shopping.module.scss'
 import styled from 'styled-components'
+import { fetchCreds } from "../../Redux/thunks/userThunks";
 
 const CheckoutSuccess = () => {
   const dispatch = useDispatch();
@@ -40,6 +41,11 @@ const CheckoutSuccess = () => {
   }
 
   useEffect(() => {
+
+    if(!userNow){
+      dispatch(fetchCreds(window.localStorage.getItem('token')))
+    }
+
     const seller = JSON.parse(window.localStorage.getItem('cartItems'))[0].seller
 
     const cart = JSON.parse(window.localStorage.getItem('cartItems'))
