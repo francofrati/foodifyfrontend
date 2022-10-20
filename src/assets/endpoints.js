@@ -24,3 +24,4 @@ export const getShopInfoURL = (restId) =>`https://server-om6g.onrender.com/shop/
 export const reviewURL = `https://server-om6g.onrender.com/reviews`
 export const reviewRestURL = (restId)=> `https://server-om6g.onrender.com/reviews/restaurant?restId=${restId}`
 export const reviewUserURL = (userId)=> `https://server-om6g.onrender.com/reviews/user?userId=${userId}`
+//janfkjas
