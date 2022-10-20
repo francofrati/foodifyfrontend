@@ -27,6 +27,7 @@ import CheckoutForm from './components/Stripe/CheckoutForm'
 import User from './components/User/User'
 import Purchases from './components/User/Purchases/Purchases.jsx'
 import RestaurantOrdersList from './components/Admin/list/restaurantOrders/RestaurantOrdersList'
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 
 
@@ -64,6 +65,7 @@ function App() {
         <Route path='/negocios/:id' element={<Shop />} />
         <Route path='/negocios/verifyAccount/:id' element={<ShopVerification />} />
         <Route path='/verifyAccount/:id' element={<AccountVerification />} />
+        <Route element={<PageNotFound />}/>
       </Routes>
     </div>
   );
