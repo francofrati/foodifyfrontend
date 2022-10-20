@@ -36,7 +36,7 @@ const CheckoutSuccess = () => {
         url: `https://foodifyback.herokuapp.com/user/${userNow.id}/${food.id}`
       })
     })
-    dispatch(clearCart());
+    // dispatch(clearCart());
     navigate(`/`);
   }
 

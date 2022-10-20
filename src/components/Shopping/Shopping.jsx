@@ -63,9 +63,9 @@ const Shopping = () => {
         dispatch(clearCart())
     }
 
-    useEffect(() => {
-      return() => localStorage.removeItem('cartItems')
-    }, [])
+    // useEffect(() => {
+    //   return() => localStorage.removeItem('cartItems')
+    // }, [])
     
 
     return(
