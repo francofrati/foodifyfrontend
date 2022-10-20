@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { jarallax, jarallaxElement } from 'jarallax'
 import Footer from '../Footer/Footer.jsx'
 import restaurant from '../../assets/restaurant.jpg'
-import restaurant2 from '../../assets/restaurant2.jpeg'
+// import restaurant2 from '../../assets/restaurant2.jpeg'
 import restaurant3 from '../../assets/restaurant3.jpeg'
 import restaurant4 from '../../assets/restaurant4.jpeg'
 import McDonaldsPromo from '../../assets/McDonaldsPromo.jpg'
