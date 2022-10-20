@@ -69,11 +69,7 @@ const CardRestaurante = ({ name, image, plus, online, delivery, onclick, restId,
 
   return (
     <div>
-      <div className={s.box}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+      
     <div className={s.cont} >
       <div onClick={onclick}>
         <div className={s.logo_cont}>
@@ -104,7 +100,6 @@ const CardRestaurante = ({ name, image, plus, online, delivery, onclick, restId,
           </div>
         </div>
       </div>
-    </div>
     </div>
     </div>
   )
