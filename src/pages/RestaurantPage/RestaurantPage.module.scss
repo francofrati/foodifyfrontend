@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container{
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(2.8px);
+    padding: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    padding-right: 9rem;
+}
+.title{
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+    text-align: center;
+  font-size: 5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+}
+.logo{
+    width: 500px;    
+    border-radius: 15px;
+}
+.food{
+    width: 240px;
+    height: 240px;
+}
+.food_card{
+    border: 4px solid black;
+    width: 240px;
+    background-color: #e1dad8;
+    overflow: hidden;
+    border-radius: 9px;
+    font-family: monospace;
+}
+.food_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.price{
+    /* border: 1px solid black; */
+    font-size: 1.4rem;
+}
+.catalog_cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #111, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+
+.btn-_bg {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.bg-1 {
+        background: #6ab1c9;
+        .btn-1 {
+            button {
+                color: #c7f8f9;
+                background: transparent;
+                border: 3px solid #c7f8f9;
+                border-radius: 5px;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+                a {
+                    color: #c7f8f9;
+                }
+                &:hover {
+                    background: #c7f8f9;
+                    color: #6ab1c9;
+                    border: 3px solid #6ab1c9;
+                    -webkit-transition: all 0.35s ease;
+                    transition: all 0.35s ease;
+                    & > a {
+                        color: #6ab1c9;
+                        -webkit-transition: all 0.35s ease;
+                        transition: all 0.35s ease;
+                    }
+                }
+                &:active {
+                    -webkit-transform: translate(5px, 5px);
+                    transform: translate(5px, 5px);
+                }
+            }
+        }
+    }
+.bg_5 {
+    background: #fff;
+    .btn_5 {
+        h2 {
+            color: #c4c0c0;
+        }
+        button {
+            color: #c4c0c0;
+            background: transparent;
+            border: 3px solid #c4c0c0;
+            border-radius: 5px;
+            -webkit-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            &:hover {
+                border-color: #50514f;
+                color: #50514f;
+                background-image: repeating-linear-gradient(-25deg, #c4c0c0, #c4c0c0 3px, transparent 4px, transparent 7px);
+                background-size: 12px 16px;
+                -webkit-animation: cloud-animation 1.25s infinite ease;
+                animation: cloud-animation 1.25s infinite ease;
+                -webkit-animation-delay: 0;
+                -webkit-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+            }
+        }
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
