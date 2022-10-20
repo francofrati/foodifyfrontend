@@ -111,8 +111,8 @@ const RestaurantPage = () => {
             </>}
             {/* <button onClick={() => handleNavigate(id)} className={s.buttonCheckout}>Proceed to checkout</button> */}
 
-            <div class={`${btn_bg} ${bg_5}`}>
-                <div class={`${btn} ${btn_5}`}>
+            <div className={`${btn_bg} ${bg_5}`}>
+                <div className={`${btn} ${btn_5}`}>
                     <button onClick={() => handleNavigate(id)}>Proceed to checkout</button>
                 </div>
             </div>
