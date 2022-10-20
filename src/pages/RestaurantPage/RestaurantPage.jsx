@@ -112,7 +112,7 @@ const RestaurantPage = () => {
             {/* <button onClick={() => handleNavigate(id)} className={s.buttonCheckout}>Proceed to checkout</button> */}
 
             
-            <a href="#" className={s.btn} onClick={() => handleNavigate(id)}>Proceed to checkout</a>
+            <a className={s.btn} onClick={() => handleNavigate(id)}>Proceed to checkout</a>
 
 
             {user ? <Review /> : <></>}
