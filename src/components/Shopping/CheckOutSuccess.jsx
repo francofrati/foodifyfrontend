@@ -32,7 +32,7 @@ const CheckoutSuccess = () => {
       console.log('//////////////////////////////')
       axios({
         method: 'put',
-        url: `https://server-om6g.onrender.com/user/${userNow.id}/${food.id}`
+        url: `https://foodifyback.herokuapp.com/user/${userNow.id}/${food.id}`
       })
     })
     dispatch(clearCart());

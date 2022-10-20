@@ -94,7 +94,7 @@ const CreateFood = ({ restId }) => {
                                 idRestaurant: restId
                             }
 
-                            axios.post(`https://server-om6g.onrender.com/foods/`, body)
+                            axios.post(`https://foodifyback.herokuapp.com/foods/`, body)
                                 .then(r => {
                                     
                                         swal({

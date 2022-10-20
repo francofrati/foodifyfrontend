@@ -23,7 +23,7 @@ const fetchCreds = (token) => (dispatch) => {
 
 const fetchAllUsers = () => (dispatch) => {
     axios
-      .get("/user")
+      .get("https://foodifyback.herokuapp.com/user")
       .then((response) => {
         dispatch(getUsers(response.data.users));
       })
@@ -32,7 +32,7 @@ const fetchAllUsers = () => (dispatch) => {
   
   const fetchUserById = (id) => (dispatch) => {
     axios
-      .get(`/user/${id}`)
+      .get(`https://foodifyback.herokuapp.com/user/${id}`)
       .then((response) => {
         dispatch(getUserById(response.data.user));
       })
@@ -41,7 +41,7 @@ const fetchAllUsers = () => (dispatch) => {
   
   const fetchDeleteUser = (id) => (dispatch) => {
     axios
-      .delete(`/user/${id}`)
+      .delete(`https://foodifyback.herokuapp.com/user/${id}`)
       .then(dispatch(fetchAllUsers()))
       .catch((error) => console.log(error));
   };

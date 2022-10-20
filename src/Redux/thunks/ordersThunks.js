@@ -3,7 +3,7 @@ import { getOrders } from '../slices/ordersSlice'
 
 const fetchAllOrders = () => (dispatch) => {
     axios
-      .get("/orders")
+      .get("https://foodifyback.herokuapp.com/orders")
       .then((response) => {
         dispatch(getOrders(response.data));
         console.log(response.data)

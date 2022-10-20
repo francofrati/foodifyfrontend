@@ -29,7 +29,7 @@ const PayButton = ({ cartItems, userInfo, cartInfo, idRestaurant }) => {
           console.log(userInfo);
           if (token) {
             axios
-              .post(`https://server-om6g.onrender.com/payment/create-checkout-session`, {
+              .post(`https://foodifyback.herokuapp.com/payment/create-checkout-session`, {
                 cartItems,
                 userId: userrr,
               })

@@ -78,7 +78,7 @@ const Orders = () => {
       })
         .then(value => {
           if (value) {
-            axios.post(`https://server-om6g.onrender.com/shop?option=status`, { delivery_status: status, orderId: orderId })
+            axios.post(`https://foodifyback.herokuapp.com/shop?option=status`, { delivery_status: status, orderId: orderId })
               .then(r => {
 
                 if (r.data.status) {
@@ -87,7 +87,7 @@ const Orders = () => {
                     icon: 'success'
                   }).then(re => {
                     setFinishedOrders(r.data.orders)
-                    axios.get(`https://server-om6g.onrender.com/orders/ordenes?deliveryStatus=proceso`).then(r => setInProccessOrders(r.data.orders))
+                    axios.get(`https://foodifyback.herokuapp.com/orders/ordenes?deliveryStatus=proceso`).then(r => setInProccessOrders(r.data.orders))
                   })
                 }
                 return
@@ -96,27 +96,27 @@ const Orders = () => {
         })
     }
 
-    axios.post(`https://server-om6g.onrender.com/shop?option=status`, { delivery_status: status, orderId: orderId })
+    axios.post(`https://foodifyback.herokuapp.com/shop?option=status`, { delivery_status: status, orderId: orderId })
       .then((r) => {
         if (status === 'proceso') {
           if (r.data.status) {
             setInProccessOrders(r.data.orders)
             // setPendingOrders((o)=>o.filter(o=>o.id!==orderId))
-            axios.get(`https://server-om6g.onrender.com/orders/ordenes?deliveryStatus=pending`).then(r => setPendingOrders(r.data.orders))
+            axios.get(`https://foodifyback.herokuapp.com/orders/ordenes?deliveryStatus=pending`).then(r => setPendingOrders(r.data.orders))
           }
           return
         }
         if (status === 'pending') {
           if (r.data.status) {
             setPendingOrders(r.data.orders)
-            axios.get(`https://server-om6g.onrender.com/orders/ordenes?deliveryStatus=proceso`).then(r => setInProccessOrders(r.data.orders))
+            axios.get(`https://foodifyback.herokuapp.com/orders/ordenes?deliveryStatus=proceso`).then(r => setInProccessOrders(r.data.orders))
           }
           return
         }
         if (status === 'errorProceso') {
           if (r.data.status) {
             setInProccessOrders(r.data.orders)
-            axios.get(`https://server-om6g.onrender.com/orders/ordenes?deliveryStatus=delivered`).then(r => setFinishedOrders(r.data.orders))
+            axios.get(`https://foodifyback.herokuapp.com/orders/ordenes?deliveryStatus=delivered`).then(r => setFinishedOrders(r.data.orders))
           }
           return
         }
@@ -136,9 +136,9 @@ const Orders = () => {
   // }, [])
 
   useEffect(() => {
-    axios.get(`https://server-om6g.onrender.com/shop/orders?delivery_status=pending&restId=${id}`).then(r => setPendingOrders(r.data.orders))
-    axios.get(`https://server-om6g.onrender.com/shop/orders?delivery_status=proceso&restId=${id}`).then(r => setInProccessOrders(r.data.orders))
-    axios.get(`https://server-om6g.onrender.com/shop/orders?delivery_status=delivered&restId=${id}`).then(r => setFinishedOrders(r.data.orders))
+    axios.get(`https://foodifyback.herokuapp.com/shop/orders?delivery_status=pending&restId=${id}`).then(r => setPendingOrders(r.data.orders))
+    axios.get(`https://foodifyback.herokuapp.com/shop/orders?delivery_status=proceso&restId=${id}`).then(r => setInProccessOrders(r.data.orders))
+    axios.get(`https://foodifyback.herokuapp.com/shop/orders?delivery_status=delivered&restId=${id}`).then(r => setFinishedOrders(r.data.orders))
   }, [])
 
   return (

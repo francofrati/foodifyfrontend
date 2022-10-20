@@ -35,7 +35,7 @@ const Summary = () =>{
     useEffect(() => {
         async function fetchData(){
             try {
-                const res = await axios.get(`/users/stats`)
+                const res = await axios.get(`https://foodifyback.herokuapp.com/users/stats`)
 
                 res.data.sort(compare)
 
@@ -53,7 +53,7 @@ const Summary = () =>{
     useEffect(() => {
         async function fetchData(){
             try {
-                const res = await axios.get(`/orders/stats`)
+                const res = await axios.get(`https://foodifyback.herokuapp.com/orders/stats`)
 
                 res.data.sort(compare)
 
@@ -78,7 +78,7 @@ const Summary = () =>{
     useEffect(() => {
         async function fetchData(){
             try {
-                const res = await axios.get(`/orders/income/stats`)
+                const res = await axios.get(`https://foodifyback.herokuapp.com/orders/income/stats`)
 
                 res.data.sort(compare)
 
