@@ -6,7 +6,7 @@ import styles from './Shopping.module.scss'
 import './CartContainer.scss'
 import PayButton from './PayButton.jsx'
 import { fetchCreds, fetchUserById } from '../../Redux/thunks/userThunks'
-import jwt_decode from 'jwt-decode'
+// import jwt_decode from 'jwt-decode'
 
 const Shopping = () => {
 
@@ -16,7 +16,7 @@ const Shopping = () => {
     
     const cart = useSelector((state) => state.shopping)
     const dispatch = useDispatch()
-    let info = jwt_decode(window.localStorage.getItem('token'));
+    // let info = jwt_decode(window.localStorage.getItem('token'));
     // const { userById } = useSelector((state) => state.users);
 
     useEffect(() => {
