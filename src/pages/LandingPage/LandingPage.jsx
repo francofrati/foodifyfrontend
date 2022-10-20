@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom"
 import { jarallax, jarallaxElement } from 'jarallax'
 import Footer from '../Footer/Footer.jsx'
 import restaurant from '../../assets/restaurant.jpg'
+import restaurant2 from '../../assets/restaurant2.jpeg'
+import restaurant3 from '../../assets/restaurant3.jpeg'
+import restaurant4 from '../../assets/restaurant4.jpeg'
 import McDonaldsPromo from '../../assets/McDonaldsPromo.jpg'
 import IndianPromo from '../../assets/IndianPromo.png'
 import FishPromo from '../../assets/FishPromo.jpg'
@@ -96,10 +99,10 @@ const LandingPage = () => {
                     <h2 data-jarallax-element="0 -200">Landing page</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
-                            <img src={restaurant} alt='demo_img' className="jarallax-img" />
+                            <img src={restauran2t} alt='demo_img' className="jarallax-img" />
                         </div>
                         <div className='content1' data-jarallax-element="-200 0">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas ducimus itaque? Quam suscipit illum labore nihil quod molestias eius unde nemo ratione fuga fugiat hic, incidunt quibusdam earum fugit.</p>
+                            <p>The Vista by Chef Denis, the in house contemporary fine-dining restaurant at Mount Alverno Luxury Resorts Caledon, specializes in traditional Canadian cuisine with a delicious French twist.</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +116,7 @@ const LandingPage = () => {
                             <img src={restaurant} alt='demo_img' className="jarallax-img" />
                         </div>
                         <div className='content1' data-jarallax-element="-200 0">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas ducimus itaque? Quam suscipit illum labore nihil quod molestias eius unde nemo ratione fuga fugiat hic, incidunt quibusdam earum fugit.</p>
+                            <p>Bubby’s opened on Thanksgiving Day 1990. Chef / Owner Ron Silver began baking pies and selling them to restaurants and his neighbors out of a small kitchen at the corner of Hudson and North Moore St. in Tribeca. </p>
                         </div>
                     </div>
                 </div>
@@ -124,10 +127,10 @@ const LandingPage = () => {
                     <h2 data-jarallax-element="0 -200">Landing page</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
-                            <img src={restaurant} alt='demo_img' className="jarallax-img" />
+                            <img src={restaurant3} alt='demo_img' className="jarallax-img" />
                         </div>
                         <div className='content1' data-jarallax-element="-200 0">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas ducimus itaque? Quam suscipit illum labore nihil quod molestias eius unde nemo ratione fuga fugiat hic, incidunt quibusdam earum fugit.</p>
+                            <p>The Old Ebbitt Grill, Washington's oldest saloon, was founded in 1856 when, according to legend, innkeeper William E. Ebbitt bought a boarding house.</p>
                         </div>
                     </div>
                 </div>
@@ -138,10 +141,10 @@ const LandingPage = () => {
                     <h2 data-jarallax-element="0 200">Landing page</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
-                            <img src={restaurant} alt='demo_img' className="jarallax-img" />
+                            <img src={restaurant4} alt='demo_img' className="jarallax-img" />
                         </div>
                         <div className='content1' data-jarallax-element="-200 0">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas ducimus itaque? Quam suscipit illum labore nihil quod molestias eius unde nemo ratione fuga fugiat hic, incidunt quibusdam earum fugit.</p>
+                            <p>The fabric of Cutlets was born out of love and respect for these humble deli creations, met with a desire to bring quality ingredients to the table.</p>
                         </div>
                     </div>
                 </div>
