@@ -1,5 +1,7 @@
 .Footer {
-    background-color: #f7f7f7;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
     a {
         text-decoration: none;
         
