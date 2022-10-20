@@ -5,6 +5,7 @@ import { Outlet, NavLink, Link, useNavigate } from "react-router-dom";
 import { fetchUserById } from '../../Redux/thunks/userThunks'
 import './Dashboard.css'
 import jwt_decode from "jwt-decode"
+import PageNotFound from '../PageNotFound/PageNotFound';
 
 const Dashboard = () => {
 
@@ -34,6 +35,8 @@ const Dashboard = () => {
   // if (!userById.isAdmin) return <p>Access denied. Not an Admin!</p>;
 
   return (
+    <div>
+    {userById.admin ? (
     <StyledDashboard>
       <SideNav>
         <h3>Quick Links</h3>
@@ -85,6 +88,12 @@ const Dashboard = () => {
         <Outlet />
       </Content>
     </StyledDashboard>
+    )
+  : (
+    <PageNotFound />
+  )
+}
+</div>
   );
 };
 
