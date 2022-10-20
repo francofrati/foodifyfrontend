@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.container{
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(2.8px);
+    padding: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    padding-right: 9rem;
+}
+.title{
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+    text-align: center;
+  font-size: 5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+}
+.logo{
+    width: 500px;    
+    border-radius: 15px;
+}
+.food{
+    width: 240px;
+    height: 240px;
+}
+.food_card{
+    border: 4px solid black;
+    width: 240px;
+    background-color: #e1dad8;
+    overflow: hidden;
+    border-radius: 9px;
+    font-family: monospace;
+}
+.food_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.price{
+    /* border: 1px solid black; */
+    font-size: 1.4rem;
+}
+.catalog_cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #111, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+
+
+
+.btn {
+	font-family: 'Oswald', sans-serif;
+	display: block;
+	height: 40px;
+	padding: 5px 30px;
+	text-align: center;
+	text-decoration: none;
+	width: 190px;
+	font-size: 13px;
+	line-height: 2em;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+    color: #fff;
+    border: 2px solid #fff;
+    background: #222;
+	&:hover {
+		padding: 5px 25px 5px 35px;
+		border-color: #e5c100;
+        color: lighten(#e5c100, 50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
