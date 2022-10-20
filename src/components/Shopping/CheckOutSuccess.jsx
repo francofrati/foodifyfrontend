@@ -42,20 +42,20 @@ const CheckoutSuccess = () => {
   }
 
   let info = jwt_decode(window.localStorage.getItem('token'));
-    let id = info.id
-    console.log('info',info)
+  let id = info.id
+  console.log('info', info)
+  const seller = JSON.parse(window.localStorage.cartItems)
+  console.log('seññer',seller)
 
   useEffect(() => {
-
-    if(!userNow){
+    
+    if (!userNow) {
       dispatch(fetchCreds(window.localStorage.getItem('token')))
     }
 
-    const seller = JSON.parse(window.localStorage.getItem('cartItems'))[0].seller
-
     const cart = JSON.parse(window.localStorage.getItem('cartItems'))
 
-    
+
     const body = {
       restaurant_id_mongo: seller,
       user_id_mongo: id,
@@ -64,7 +64,9 @@ const CheckoutSuccess = () => {
       products: JSON.parse(window.localStorage.getItem('cartItems')),
     }
 
-    axios.post('https://foodifyback.herokuapp.com/order/post',body)
+    console.log(body)
+
+    axios.post('https://foodifyback.herokuapp.com/orders/post', body)
   }, [])
 
   return (
