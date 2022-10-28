@@ -96,7 +96,7 @@ const LandingPage = () => {
         <div className='body1' onClick={() => navigate('/restaurantes')}>
             <section>
                 <div className='box1'>
-                    <h2 data-jarallax-element="0 -200">Landing page</h2>
+                    <h2 data-jarallax-element="0 -200">TiendaUno</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
                             <img src={restaurant2} alt='demo_img' className="jarallax-img" />
@@ -110,7 +110,7 @@ const LandingPage = () => {
 
             <section>
                 <div className='box1'>
-                    <h2 data-jarallax-element="0 200">Landing page</h2>
+                    <h2 data-jarallax-element="0 200">TiendaDos</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
                             <img src={restaurant} alt='demo_img' className="jarallax-img" />
@@ -124,7 +124,7 @@ const LandingPage = () => {
 
             <section>
                 <div className='box1'>
-                    <h2 data-jarallax-element="0 -200">Landing page</h2>
+                    <h2 data-jarallax-element="0 -200">TiendaTres</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
                             <img src={restaurant3} alt='demo_img' className="jarallax-img" />
@@ -138,7 +138,7 @@ const LandingPage = () => {
 
             <section>
                 <div className='box1'>
-                    <h2 data-jarallax-element="0 200">Landing page</h2>
+                    <h2 data-jarallax-element="0 200">TiendaCuatro</h2>
                     <div className='container1'>
                         <div className='imgBx1 jarallax'>
                             <img src={restaurant4} alt='demo_img' className="jarallax-img" />
