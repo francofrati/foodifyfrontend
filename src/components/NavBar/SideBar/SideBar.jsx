@@ -93,7 +93,7 @@ const SideBar = ({ isVisible, setIsVisible }) => {
 
                         </div>
                         {user && <div className={s.sections}>
-                            <CustomOptions name='Cuenta' />
+                            <CustomOptions name='Cuenta' path={'/user'}/>
                             <CustomOptions onClick={() => { handleLogOutBtn(); setIsVisible() }} style={{ backgroundColor: '#B65151' }} name='Cerrar sesion' />
                         </div>
                         }
